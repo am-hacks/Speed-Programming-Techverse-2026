@@ -11,12 +11,12 @@ const Footer = () => {
           <p className="text-muted-foreground">
             UMT TECHVERSE • Office of Participant Affairs • Estd 1990
           </p>
-          <div className="flex items-center justify-center gap-4 text-sm text-terminal-dim">
-            <span>Chapter 2</span>
+          <div className="flex items-center justify-center gap-4 text-xs md:text-sm text-terminal-dim">
+            <span>ChapterII</span>
             <span className="text-primary">•</span>
             <span>Speed Programming</span>
             <span className="text-primary">•</span>
-            <span>2024</span>
+            <span>2026</span>
           </div>
           <p className="text-xs text-muted-foreground pt-4">
             <span className="text-secondary">$</span> echo "May the best algorithm win!" <span className="w-2 h-3 bg-primary inline-block animate-pulse ml-1" />
