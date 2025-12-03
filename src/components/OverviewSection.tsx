@@ -40,15 +40,15 @@ const OverviewSection = () => {
                   <div className="text-secondary group-hover:text-primary transition-colors mb-2">
                     {item.icon}
                   </div>
-                  <h3 className="text-primary font-bold text-lg">{item.title}</h3>
-                  <p className="text-muted-foreground text-sm">{item.description}</p>
+                  <h3 className="text-primary font-bold text-sm md:text-lg">{item.title}</h3>
+                  <p className="text-muted-foreground text-xs md:text-sm">{item.description}</p>
                 </div>
               ))}
             </div>
 
             {/* Detailed overview */}
-            <div className="space-y-3 text-card-foreground">
-              <div className="flex items-start gap-3">
+            <div className="space-y-3 text-card-foreground text-sm md:text-base">
+              <div className="flex items-start gap-3 ">
                 <span className="text-secondary">01</span>
                 <p>The programming competition consists of <span className="text-primary">one round</span>.</p>
               </div>

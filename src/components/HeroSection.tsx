@@ -37,8 +37,8 @@ const HeroSection = () => {
 
         {/* Tagline */}
         <p className="text-muted-foreground text-lg md:text-xl max-w-2xl mx-auto">
-          <span className="text-secondary">{">"}</span> Test your coding skills in a 5-hour intense battle of algorithms and problem-solving{" "}
-          <span className="text-secondary">{"<"}</span>
+          <span className="text-secondary">{"<"}</span> Test your coding skills in a 5-hour intense battle of algorithms and problem-solving{" "}
+          <span className="text-secondary">{">"}</span>
         </p>
 
         {/* Countdown */}
@@ -66,11 +66,7 @@ const HeroSection = () => {
         </div>
       </div>
 
-      {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-bounce">
-        <span className="text-xs text-muted-foreground">scroll</span>
-        <div className="w-px h-8 bg-gradient-to-b from-primary to-transparent" />
-      </div>
+     
     </section>
   );
 };

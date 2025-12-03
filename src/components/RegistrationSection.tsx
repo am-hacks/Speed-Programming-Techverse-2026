@@ -1,5 +1,6 @@
 import TerminalCard from "./TerminalCard";
 import { CreditCard, Phone, User } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const RegistrationSection = () => {
   return (
@@ -11,7 +12,9 @@ const RegistrationSection = () => {
             <div className="p-6 border border-border rounded-sm bg-muted/10">
               <div className="flex items-center gap-3 mb-4">
                 <CreditCard className="w-6 h-6 text-secondary" />
-                <h3 className="text-lg font-bold text-primary">Registration Fee</h3>
+                <h3 className="text-lg font-bold text-primary">
+                  Registration Fee
+                </h3>
               </div>
               <div className="text-center py-8">
                 <p className="text-5xl md:text-6xl font-bold text-primary text-glow mb-2">
@@ -25,7 +28,9 @@ const RegistrationSection = () => {
             <div className="p-6 border border-border rounded-sm bg-muted/10">
               <div className="flex items-center gap-3 mb-4">
                 <Phone className="w-6 h-6 text-secondary" />
-                <h3 className="text-lg font-bold text-primary">For Queries Contact</h3>
+                <h3 className="text-lg font-bold text-primary">
+                  For Queries Contact
+                </h3>
               </div>
               <div className="space-y-4">
                 <div className="flex items-center gap-3 p-3 border border-border rounded-sm hover:border-primary/50 transition-colors">
@@ -58,14 +63,15 @@ const RegistrationSection = () => {
 
           {/* Register CTA */}
           <div className="mt-8 text-center">
-            <a
-              href="#"
+            <Link
+              to="/"
+              onClick={() => window.open("https://umttechverse.com", "_blank")}
               className="inline-flex items-center gap-2 px-8 py-4 bg-primary text-primary-foreground font-bold rounded-sm hover:bg-primary/90 transition-all duration-300 box-glow hover:scale-105"
             >
               <span>{"{"}</span>
               <span>REGISTER YOUR TEAM</span>
               <span>{"}"}</span>
-            </a>
+            </Link>
           </div>
         </TerminalCard>
       </div>
