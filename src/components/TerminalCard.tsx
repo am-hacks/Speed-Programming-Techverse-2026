@@ -1,4 +1,5 @@
 import { ReactNode } from "react";
+import TypewriterText from "./TypewriterText";
 
 interface TerminalCardProps {
   title: string;
@@ -24,8 +25,7 @@ const TerminalCard = ({ title, children, className = "" }: TerminalCardProps) =>
       <div className="p-4 md:p-6">
         <div className="flex items-center gap-2 mb-4">
           <span className="text-secondary">$</span>
-          <span className="text-primary text-glow">{title}</span>
-          <span className="w-2 h-4 bg-primary animate-pulse" />
+          <TypewriterText text={title} className="text-primary text-glow" />
         </div>
         {children}
       </div>
