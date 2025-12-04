@@ -14,7 +14,7 @@ interface CountdownTimerProps {
 const CountdownTimer = ({ targetDate }: CountdownTimerProps) => {
   const calculateTimeLeft = (): TimeLeft => {
     const difference = +targetDate - +new Date();
-    
+
     if (difference > 0) {
       return {
         days: Math.floor(difference / (1000 * 60 * 60 * 24)),
@@ -23,7 +23,7 @@ const CountdownTimer = ({ targetDate }: CountdownTimerProps) => {
         seconds: Math.floor((difference / 1000) % 60),
       };
     }
-    
+
     return { days: 0, hours: 0, minutes: 0, seconds: 0 };
   };
 
@@ -40,8 +40,8 @@ const CountdownTimer = ({ targetDate }: CountdownTimerProps) => {
   const TimeBlock = ({ value, label }: { value: number; label: string }) => (
     <div className="flex flex-col items-center">
       <div className="relative">
-        <div className="bg-card border border-primary/30 rounded-sm px-4 py-3 md:px-6 md:py-4 min-w-[70px] md:min-w-[90px] box-glow">
-          <span className="text-3xl md:text-5xl font-bold text-primary text-glow tabular-nums">
+        <div className="bg-card border border-primary/30 rounded-sm px-2 py-2 md:px-6 md:py-4  md:min-w-[90px] box-glow">
+          <span className="text-lg md:text-5xl font-bold text-primary text-glow tabular-nums">
             {String(value).padStart(2, "0")}
           </span>
         </div>
@@ -57,16 +57,20 @@ const CountdownTimer = ({ targetDate }: CountdownTimerProps) => {
   );
 
   return (
-    <div className="flex items-center gap-2 md:gap-4">
+    <div className="flex items-center gap-2 md:gap-4 ">
       <TimeBlock value={timeLeft.days} label="Days" />
-      <span className="text-3xl md:text-5xl text-primary text-glow animate-pulse-glow">:</span>
+      <span className="text-3xl md:text-5xl text-primary text-glow animate-pulse-glow">
+        :
+      </span>
       <TimeBlock value={timeLeft.hours} label="Hours" />
-      <span className="text-3xl md:text-5xl text-primary text-glow animate-pulse-glow">:</span>
+      <span className="text-3xl md:text-5xl text-primary text-glow animate-pulse-glow">
+        :
+      </span>
       <TimeBlock value={timeLeft.minutes} label="Minutes" />
-      <span className="text-3xl md:text-5xl text-primary text-glow animate-pulse-glow hidden sm:block">:</span>
-      <div className="hidden sm:block">
-        <TimeBlock value={timeLeft.seconds} label="Seconds" />
-      </div>
+      <span className="text-3xl md:text-5xl text-primary text-glow animate-pulse-glow ">
+        :
+      </span>
+      <TimeBlock value={timeLeft.seconds} label="Seconds" />
     </div>
   );
 };

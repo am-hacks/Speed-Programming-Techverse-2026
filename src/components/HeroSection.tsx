@@ -5,7 +5,7 @@ const HeroSection = () => {
   const eventDate = new Date("2026-01-09T09:00:00");
 
   return (
-    <section className="min-h-screen flex flex-col items-center justify-center px-4 py-5 relative">
+    <section className="min-h-screen flex flex-col items-center justify-center px-4 py-5 ">
       {/* Decorative elements */}
       <div className="absolute top-1/4 left-10 text-primary/10 text-6xl font-bold select-none hidden lg:block">
         {"</>"}
@@ -42,7 +42,7 @@ const HeroSection = () => {
         </p>
 
         {/* Countdown */}
-        <div className="pt-8">
+        <div className="pt-2">
           <p className="text-muted-foreground text-sm mb-4 uppercase tracking-widest">
             Competition Starts In
           </p>
@@ -50,7 +50,7 @@ const HeroSection = () => {
         </div>
 
         {/* CTA */}
-        <div className="pt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+        <div className="pt-8 flex flex-col sm:flex-row items-center justify-center gap-4 relative">
           <a
             href="#registration"
             className="px-8 py-4 bg-primary text-primary-foreground font-bold rounded-sm hover:bg-primary/90 transition-all duration-300 box-glow hover:scale-105"
