@@ -38,7 +38,7 @@ const CountdownTimer = ({ targetDate }: CountdownTimerProps) => {
   }, [targetDate]);
 
   const TimeBlock = ({ value, label }: { value: number; label: string }) => (
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col items-center ">
       <div className="relative">
         <div className="bg-card border border-primary/30 rounded-sm px-2 py-2 md:px-6 md:py-4  md:min-w-[90px] box-glow">
           <span className="text-lg md:text-5xl font-bold text-primary text-glow tabular-nums">
@@ -57,7 +57,7 @@ const CountdownTimer = ({ targetDate }: CountdownTimerProps) => {
   );
 
   return (
-    <div className="flex items-center gap-2 md:gap-4 ">
+    <div className="flex items-center gap-2 md:gap-4 justify-center ">
       <TimeBlock value={timeLeft.days} label="Days" />
       <span className="text-3xl md:text-5xl text-primary text-glow animate-pulse-glow">
         :
