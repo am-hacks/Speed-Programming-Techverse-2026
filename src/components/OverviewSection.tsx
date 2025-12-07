@@ -11,7 +11,7 @@ const OverviewSection = () => {
     {
       icon: <Monitor className="w-6 h-6" />,
       title: "1 PC Per Team",
-      description: "Provided with internet access",
+      description: "Provided by the organizers",
     },
     {
       icon: <Users className="w-6 h-6" />,
