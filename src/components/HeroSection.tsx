@@ -1,12 +1,9 @@
 import CountdownTimer from "./CountdownTimer";
 
 const HeroSection = () => {
-  // Set target date - Adjust this to your actual event date
-  const eventDate = new Date("2026-01-09T09:00:00");
-
+  const eventDate = new Date("2026-01-09T17:00:00");
   return (
     <section className="min-h-screen flex flex-col items-center justify-center px-4 py-5 ">
-      {/* Decorative elements */}
       <div className="absolute top-1/4 left-10 text-primary/10 text-6xl font-bold select-none hidden lg:block">
         {"</>"}
       </div>
@@ -19,7 +16,9 @@ const HeroSection = () => {
         {/* Badge */}
         <div className="inline-flex items-center gap-2 px-4 py-2 border border-primary/30 rounded-sm bg-card/50 backdrop-blur-sm">
           <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
-          <span className="text-xs  text-muted-foreground">UMT TECHVERSE • Office of Participant Affairs</span>
+          <span className="text-xs  text-muted-foreground">
+            UMT TECHVERSE 
+          </span>
         </div>
 
         {/* Title */}
@@ -37,14 +36,15 @@ const HeroSection = () => {
 
         {/* Tagline */}
         <p className="text-muted-foreground text-sm md:text-xl max-w-2xl mx-auto">
-          <span className="text-secondary">{"<"}</span> Test your coding skills in a 5-hour intense battle of algorithms and problem-solving{" "}
+          <span className="text-secondary">{"<"}</span> Test your coding skills
+          in a 5-hour intense battle of algorithms and problem-solving{" "}
           <span className="text-secondary">{">"}</span>
         </p>
 
         {/* Countdown */}
         <div className="pt-2">
           <p className="text-muted-foreground text-sm mb-4 uppercase tracking-widest">
-            Competition Starts In
+            Competition Will  <b>Ends In</b>
           </p>
           <CountdownTimer targetDate={eventDate} />
         </div>
@@ -65,8 +65,6 @@ const HeroSection = () => {
           </a>
         </div>
       </div>
-
-     
     </section>
   );
 };
