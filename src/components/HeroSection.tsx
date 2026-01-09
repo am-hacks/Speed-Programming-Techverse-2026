@@ -1,7 +1,7 @@
 import CountdownTimer from "./CountdownTimer";
 
 const HeroSection = () => {
-  const eventDate = new Date("2026-01-09T17:40:00");
+  const eventDate = new Date("2026-01-09T17:45:00");
   return (
     <section className="min-h-screen flex flex-col items-center justify-center px-4 py-5 ">
       <div className="absolute top-1/4 left-10 text-primary/10 text-6xl font-bold select-none hidden lg:block">
