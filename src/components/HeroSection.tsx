@@ -35,7 +35,7 @@ const HeroSection = () => {
         </div>
 
         {/* Tagline */}
-        <p className="text-muted-foreground text-sm md:text-xl max-w-2xl mx-auto">
+        <p className="text-white text-sm md:text-xl max-w-2xl mx-auto">
           <span className="text-secondary">{"<"}</span> Test your coding skills
           in a 5-hour intense battle of algorithms and problem-solving{" "}
           <span className="text-secondary">{">"}</span>
@@ -44,7 +44,7 @@ const HeroSection = () => {
         {/* Countdown */}
         <div className="pt-2">
           <p className="text-muted-foreground text-sm mb-4 uppercase tracking-widest">
-            Competition Will <span className="text-primary">Ends In</span>
+            Competition Will <span className="text-primary font-black">Ends In</span>
           </p>
           <CountdownTimer targetDate={eventDate} />
         </div>

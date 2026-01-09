@@ -50,7 +50,7 @@ const CountdownTimer = ({ targetDate }: CountdownTimerProps) => {
         <div className="absolute -bottom-1 -left-1 w-2 h-2 border-b border-l border-primary" />
         <div className="absolute -bottom-1 -right-1 w-2 h-2 border-b border-r border-primary" />
       </div>
-      <span className="text-xs md:text-sm font-bold mt-2 uppercase tracking-widest">
+      <span className="text-xs md:text-sm font-black mt-2 uppercase tracking-widest">
         {label}
       </span>
     </div>
