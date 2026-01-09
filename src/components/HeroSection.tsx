@@ -44,7 +44,7 @@ const HeroSection = () => {
         {/* Countdown */}
         <div className="pt-2">
           <p className="text-muted-foreground text-sm mb-4 uppercase tracking-widest">
-            Competition Will  <b>Ends In</b>
+            Competition Will <span className="text-primary">Ends In</span>
           </p>
           <CountdownTimer targetDate={eventDate} />
         </div>

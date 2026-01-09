@@ -58,10 +58,10 @@ const CountdownTimer = ({ targetDate }: CountdownTimerProps) => {
 
   return (
     <div className="flex items-center gap-2 md:gap-4 justify-center ">
-      <TimeBlock value={timeLeft.days} label="Days" />
+      {/* <TimeBlock value={timeLeft.days} label="Days" />
       <span className="text-3xl md:text-5xl text-primary text-glow animate-pulse-glow">
         :
-      </span>
+      </span> */}
       <TimeBlock value={timeLeft.hours} label="Hours" />
       <span className="text-3xl md:text-5xl text-primary text-glow animate-pulse-glow">
         :
